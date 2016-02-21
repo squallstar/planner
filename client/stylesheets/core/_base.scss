@@ -6,8 +6,6 @@
 }
 
 html, body {
-  height: 100%;
-  min-height: 100%;
   font-family: $font-primary;
   background-color: #666;
 
@@ -18,10 +16,13 @@ html, body {
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
   font-size: 1.5rem;
+  height: 100%;
+  min-height: 100%;
 }
 
 input, textarea {
@@ -41,8 +42,9 @@ a {
 }
 
 #app {
+  position: relative;
   width: $app-viewport-width;
-  min-height: $app-viewport-height;
+  height: $app-viewport-height;
   margin: 30px auto;
   background-color: #FFF;
   box-shadow: 0 1px 5px rgba(0,0,0,0.5);
@@ -50,7 +52,8 @@ a {
   @include below($app-mobile-trigger-width) {
     margin: 0;
     width: 100%;
-    min-height: auto;
+    height: 100%;
+    min-height: 100%;
     box-shadow: none;
   }
 }
