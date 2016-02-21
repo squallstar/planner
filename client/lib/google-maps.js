@@ -18,6 +18,6 @@ Template.bindAutocomplete = function (template) {
       });
     }
 
-    isLoaded ? attachAutocomplete() : window.onload(attachAutocomplete);
+    isLoaded ? attachAutocomplete() : (window.onload = attachAutocomplete);
   });
 };
