@@ -1,7 +1,14 @@
 <template name="newTrip">
   <h1>New trip</h1>
   <form>
-    <input type="text" name="name" placeholder="Trip name" required />
-    <input type="submit" value="Create"/>
+    <div class="group">
+      <input type="text" name="name" placeholder="Trip name" required />
+    </div>
+    <div class="group">
+      <input type="text" name="location" placeholder="Location" data-location required />
+    </div>
+    <div class="group">
+      <input type="submit" value="Create"/>
+    </div>
   </form>
 </template>

@@ -1,3 +1,5 @@
+Template.bindAutocomplete(Template.newTrip);
+
 Template.newTrip.events({
   'submit form': function (event, instance) {
     event.preventDefault();

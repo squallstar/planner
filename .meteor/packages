@@ -25,3 +25,4 @@ fourseven:scss          # SCSS
 fortawesome:fontawesome # Icons
 momentjs:moment         # Datetime library
 iron:router             # Application router
+mrt:googlemaps          # Google Maps API
