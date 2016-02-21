@@ -1,7 +1,17 @@
 <template name="tripRow">
   <li>
     <a href="/trips/{{_id}}">
-      {{name}}
+      <div class="content">
+        <h3>{{location}}</h3>
+        <h2>{{name}}</h2>
+        <ul class="notes">
+          <li><i class="fa fa-plane"></i> {{dateFromAt}}</li>
+        </ul>
+      </div>
+      <div class="side">
+
+      </div>
     </a>
+    <hr />
   </li>
 </template>
