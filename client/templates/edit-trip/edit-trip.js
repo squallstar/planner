@@ -25,7 +25,7 @@ Template.editTrip.events({
       Trip.update({ _id: id }, { $set: data });
     } else {
       id = Trip.insert(data);
-      Bert.alert('Your trip "' + name + '" has been created');
+      Bert.alert('Your trip "' + data.name + '" has been created');
     }
 
     Router.go('/trips/' + id);

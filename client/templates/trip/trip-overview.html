@@ -1,13 +1,17 @@
 <template name="tripOverview">
-  <a href="/trips">Back to trips</a>
-  <hr />
-  <h1>{{name}}</h1>
-  <h2>{{location}}</h2>
-  <h3>{{startsAt}}</h3>
-  <hr />
-  {{> tripCreateBlock id=_id}}
-  <hr />
-  <a href="#" data-delete onclick="return confirm('Are you sure?')">Delete trip</a>
-  <hr />
-  <a href="/trips/{{_id}}/settings">Settings</a>
+  <section class="tour-overview">
+    <div class="row">
+      <a href="/trips">Back to trips</a>
+      <hr />
+      <h1>{{name}}</h1>
+      <h2>{{location}}</h2>
+      <h3>{{startsAt}}</h3>
+      <hr />
+      {{> tripCreateBlock id=_id}}
+      <hr />
+      <a href="#" data-delete onclick="return confirm('Are you sure?')">Delete trip</a>
+      <hr />
+      <a href="/trips/{{_id}}/settings">Settings</a>
+    </div>
+  </section>
 </template>
