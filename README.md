@@ -1,3 +1,7 @@
-# [WIP] Trip planner
+# [WIP] Travel planner
 
-A Sunday project by @Mintsugar and @squallstar.
+A Sunday hackathon by @Mintsugar and @squallstar.
+
+---
+
+To run, `$ meteor`.
