@@ -11,7 +11,7 @@ html, body {
   font-family: $font-primary;
   background-color: #666;
 
-  @include below($app-viewport-width) {
+  @include below($app-mobile-trigger-width) {
     background-color: #FFF;
   }
 }
@@ -47,7 +47,7 @@ a {
   background-color: #FFF;
   box-shadow: 0 1px 5px rgba(0,0,0,0.5);
 
-  @include below($app-viewport-width) {
+  @include below($app-mobile-trigger-width) {
     margin: 0;
     width: 100%;
     min-height: auto;
