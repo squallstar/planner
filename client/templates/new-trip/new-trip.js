@@ -1,5 +1,11 @@
 Template.bindAutocomplete(Template.newTrip);
 
+Template.newTrip.helpers({
+  dateFromRange: function () {
+    return moment().format('YYYY-MM-DD');
+  }
+});
+
 Template.newTrip.events({
   'submit form': function (event, instance) {
     event.preventDefault();

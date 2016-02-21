@@ -1,9 +1,11 @@
 <template name="tripsList">
-  <ul class="trips-list">
-    {{#each trips}}
-      {{> tripRow}}
-    {{/each}}
-  </ul>
-  <hr />
-  <a href="trips/new">Create new</a>
+  <div class="row">
+    <ul class="trips-list">
+      {{#each trips}}
+        {{> tripRow}}
+      {{/each}}
+    </ul>
+    <hr />
+    <a href="trips/new">Create new</a>
+  </div>
 </template>

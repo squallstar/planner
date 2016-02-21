@@ -1,18 +1,20 @@
 <template name="newTrip">
-  <h1>New trip</h1>
-  <form>
-    <div class="group">
-      <input type="text" name="name" placeholder="Trip name" required />
-    </div>
-    <div class="group">
-      <input type="text" name="location" placeholder="Location" data-location required />
-    </div>
-    <div class="group">
-      <input type="date" name="from" placeholder="From" required />
-      <input type="date" name="to" placeholder="To" />
-    </div>
-    <div class="group">
-      <input type="submit" value="Create"/>
-    </div>
-  </form>
+  <div class="row">
+    <h1>New trip</h1>
+    <form>
+      <div class="group">
+        <input type="text" name="name" placeholder="Trip name" required />
+      </div>
+      <div class="group">
+        <input type="text" name="location" placeholder="Location" data-location required />
+      </div>
+      <div class="group">
+        <input type="date" name="from" placeholder="From" min={{dateFromRange}} required />
+        <input type="date" name="to" placeholder="To" min={{dateFromRange}} />
+      </div>
+      <div class="group">
+        <input type="submit" value="Create"/>
+      </div>
+    </form>
+  </div>
 </template>
