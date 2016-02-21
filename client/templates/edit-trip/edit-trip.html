@@ -1,0 +1,24 @@
+<template name="editTrip">
+  <div class="row">
+    {{#if isNew}}
+      <h1>New trip</h1>
+    {{else}}
+      <h1>{{name}}</h1>
+    {{/if}}
+    <form>
+      <div class="group">
+        <input type="text" name="name" placeholder="Trip name" required value={{name}} />
+      </div>
+      <div class="group">
+        <input type="text" name="location" placeholder="Location" data-location value={{location}} required />
+      </div>
+      <div class="group">
+        <input type="date" name="from" placeholder="From" min={{dateFromRange}} value={{dateFrom}} required />
+        <input type="date" name="to" placeholder="To" min={{dateFromRange}} value={{dateTo}} />
+      </div>
+      <div class="group">
+        <input type="submit" value="{{#if isNew}}Create{{else}}Save{{/if}}"/>
+      </div>
+    </form>
+  </div>
+</template>
