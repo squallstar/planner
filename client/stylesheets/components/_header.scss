@@ -1,0 +1,36 @@
+#header {
+  position: fixed;
+  background-color: $color-primary;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: $header-height;
+  color: #FFF;
+
+  > .row {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  h1 {
+    font-family: $font-title;
+    font-weight: normal;
+  }
+
+  .fab {
+    $size: 50px;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: #FFF;
+    color: $color-primary;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+    position: absolute;
+    bottom: -($size/2);
+    right: 20px;
+  }
+}
